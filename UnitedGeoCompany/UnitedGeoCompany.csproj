@@ -4,12 +4,31 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>bcc12284-9fa4-44a7-81ca-0fedddc16ee5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.Core" Version="1.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="OneOf" Version="3.0.271" />
+    <PackageReference Include="OneOf.SourceGenerator" Version="3.0.271" />
     <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitedGeoCompany.DataTransfer\UnitedGeoCompany.DataTransfer.csproj" />
+    <ProjectReference Include="..\UnitedGeoCompany.Repository\UnitedGeoCompany.Repository.csproj" />
+    <ProjectReference Include="..\UnitedGeoCompanyDataBase\UnitedGeoCompanyDataBase.csproj" />
   </ItemGroup>
 
 </Project>
